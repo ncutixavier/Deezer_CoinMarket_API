@@ -5,13 +5,20 @@
     "title": "LMS API",
     "description": "LMS API"
   },
-  "schemes": ["http", "https"],
-  "host": "localhost:8005",
-  "basePath": "/",
+  "servers": [
+    {
+      "url": "http://localhost:4000",
+      "name": "localhost"
+    },
+    {
+      "url": "https://leave-app-sys.herokuapp.com/",
+      "name": "dev"
+    }
+  ],
   "paths": {
     "/": {
       "get": {
-        "tags": ["Welcome Endpoint"],
+        "tags": ["Welcome"],
         "summary": "Get Started",
         "description": "Welcome Endpoint",
         "responses": {
