@@ -1,0 +1,25 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "LMS API",
+    "description": "LMS API"
+  },
+  "schemes": ["http", "https"],
+  "host": "localhost:8005",
+  "basePath": "/",
+  "paths": {
+    "/": {
+      "get": {
+        "tags": ["Welcome Endpoint"],
+        "summary": "Get Started",
+        "description": "Welcome Endpoint",
+        "responses": {
+          "200": {
+            "description": "Welcome!"
+          }
+        }
+      }
+    }
+  }
+}
