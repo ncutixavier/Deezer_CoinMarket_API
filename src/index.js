@@ -7,6 +7,7 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import UserRoute from './routes/UserRoute'
 import DeezerRoute from './routes/DeezerRoutes'
+import CoinMarketRoute from './routes/CoinMarketRoute'
 
 require('dotenv').config();
 
@@ -28,6 +29,7 @@ app.use(
 );
 app.use('/api/v1/users', UserRoute)
 app.use('/api/v1/deezer', DeezerRoute)
+app.use('/api/v1/coinmarket', CoinMarketRoute)
 
 mongoose
   .connect(process.env.DATABASE_URI, {

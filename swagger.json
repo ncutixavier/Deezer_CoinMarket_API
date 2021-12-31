@@ -73,6 +73,20 @@
           }
         }
       }
+    },
+    "/api/v1/coinmarket": {
+      "get": {
+        "tags": ["Coinmarket"],
+        "summary": "Get Coinmarket",
+        "description": "Get Coinmarket",
+        "operationId": "get_coinmarket",
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        }
+      }
     }
   }
 }

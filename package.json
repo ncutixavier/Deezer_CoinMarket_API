@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel src -d dist",
     "test": "nyc mocha --require @babel/register ./src/test/* --timeout 10000 --exit",
-    "dev": "nodemon --exec babel-node ./src/index.js",
+    "dev": "nodemon --exec babel-node /src/index.js",
     "start": "npm run build && node dist/index.js"
   },
   "repository": {
@@ -21,10 +21,10 @@
   },
   "homepage": "https://github.com/ncutixavier/leave-application-system#readme",
   "devDependencies": {
-    "@babel/cli": "^7.15.7",
-    "@babel/core": "^7.15.8",
-    "@babel/node": "^7.15.8",
-    "@babel/preset-env": "^7.15.8",
+    "@babel/cli": "^7.16.7",
+    "@babel/core": "^7.16.7",
+    "@babel/node": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
     "@babel/register": "^7.15.3",
     "chai": "^4.3.4",
     "mocha": "^9.1.3",
